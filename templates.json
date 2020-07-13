@@ -1,0 +1,16 @@
+{
+    "tpls": {
+        "react-back": {
+            "url": "https://github.com/Ashyoo/es6-notes.git",
+            "desc": "React 中后台项目项目脚手架"
+        },
+        "react-web": {
+            "url": "https://github.com/Ashyoo/es6-notes.git",
+            "desc": "React 前台项目项目脚手架"
+        },
+        "vue-web": {
+            "url": "https://github.com/Ashyoo/es6-notes.git",
+            "desc": "Vue 中后台项目脚手架"
+        }
+    }
+}

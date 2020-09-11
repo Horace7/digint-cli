@@ -7,7 +7,11 @@ const fs = require('fs')
  
 module.exports = () => {
  co(function *() {
- 
+   let code = yield prompt('请输入校验码: ')
+   if (!code || code !== 'Horace') {
+    console.log(chalk.red('校验码错误,请联系gutouya@163.com'))
+    process.exit()
+   }
    let tplName = yield prompt('模板名称: ')
    let gitUrl = yield prompt('Git链接: ')
    let desc = yield prompt('模板描述: ')

@@ -15,7 +15,7 @@ program
  
 program
     .command('add')
-    .description('Add a new template')
+    .description('添加一个新模板(需校验)')
     .alias('a')
     .action(() => {
         require('../command/add')()
@@ -23,23 +23,23 @@ program
  
 program
     .command('list')
-    .description('List all the templates')
+    .description('查看全部模板列表')
     .alias('l')
     .action(() => {
         require('../command/list')()
     })
  
 program
-    .command('init')
-    .description('Generate a new project')
-    .alias('i')
+    .command('create')
+    .description('选择模板并创建项目')
+    .alias('c')
     .action(() => {
-        require('../command/init')()
+        require('../command/create')()
     })
  
 program
     .command('delete')
-    .description('Delete a template')
+    .description('删除一个模板(需校验)')
     .alias('d')
     .action(() => {
         require('../command/delete')()

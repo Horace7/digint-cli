@@ -23,7 +23,7 @@ let promptList = [
     },
     {
       type: 'input',
-      message: '请输入项目名字',
+      message: '请输入项目名称：',
       name: 'projectName',
       validate (val) {
         if (val !== '') {
@@ -35,12 +35,12 @@ let promptList = [
   ]
 module.exports = () => {
     inquirer.prompt(promptList).then(answers => {
- 
+
         let ind = templates[answers.tplName],
             gitUrl = `direct:${ind.url}`,
             defaultUrl = './',
             projectUrl = `${defaultUrl}/${answers.projectName}`,
-            spinner = ora(chalk.underline('\n 开始生成项目，请等待...'))
+            spinner = ora(chalk.underline('\n 开始创建项目，请等待...'))
 
         spinner.color = 'yellow'
         spinner.start();
@@ -51,7 +51,7 @@ module.exports = () => {
             console.log(error)
             process.exit()
           }
-          console.log(chalk.green(`\n √ ${answers.projectName} 项目生成完毕!`))
+          console.log(chalk.green(`\n √ ${answers.projectName} 项目创建成功!`))
           console.log(`\n cd ${answers.projectName} && npm install \n`)
         })
     })

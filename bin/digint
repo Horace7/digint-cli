@@ -13,13 +13,13 @@ program
 program
     .usage('<command>')
 
-// program
-//     .command('add')
-//     .description('添加一个新模板(需校验)')
-//     .alias('a')
-//     .action(() => {
-//         require('../command/add')()
-//     })
+program
+    .command('add')
+    .description('添加一个新模板(需校验)')
+    .alias('a')
+    .action(() => {
+        require('../command/add')()
+    })
 
 program
     .command('list')
@@ -37,13 +37,13 @@ program
         require('../command/create')()
     })
 
-// program
-//     .command('delete')
-//     .description('删除一个模板(需校验)')
-//     .alias('d')
-//     .action(() => {
-//         require('../command/delete')()
-//     })
+program
+    .command('delete')
+    .description('删除一个模板(需校验)')
+    .alias('d')
+    .action(() => {
+        require('../command/delete')()
+    })
 
 program.parse(process.argv)
 

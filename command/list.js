@@ -10,7 +10,7 @@ module.exports = () => {
     }
     for (let tpl in templates) {
         console.log(
-            '  ' + ' 👉 ' +
+            '  ' + '👉' +
             '  ' + chalk.redBright(tpl) +
             ' - ' + chalk.blueBright(templates[tpl].desc)
         )

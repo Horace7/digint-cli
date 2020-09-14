@@ -1,6 +1,6 @@
 {
   "name": "digint-cli",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Framework Template",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -9,8 +9,8 @@
     "digint": "bin/digint"
   },
   "author": {
-    "name": "shr",
-    "email": "gutouya7@gmail.com"
+    "name": "haoran.shi",
+    "email": "gutouya@163.com"
   },
   "license": "ISC",
   "dependencies": {

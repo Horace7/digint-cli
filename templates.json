@@ -1,1 +1,1 @@
-{"tpls":{"Vue3.0基础模板":{"url":"https://github.com/Ashyoo/vue-next-template","desc":"基于Vue3.0的项目模板，集成vue-router和vuex的beta版，目前主流UI框架并不支持Vue3.0，因此不建议用于实际项目开发，可以用来学习Vue3.0"}}}
+{"tpls":{"Vue3.0基础模板":{"url":"https://github.com/Ashyoo/vue-next-template","desc":"基于Vue3.0的项目模板，集成vue-router和vuex的beta版，目前主流UI框架并不支持Vue3.0，因此不建议用于实际项目开发，可以用来学习Vue3.0"},"vue-2.6.x-admin-template":{"url":"https://github.com/Ashyoo/vue-template.git","desc":"基于vue2.6.x版本的基础后台模板,包含了常用的功能和库,登录页面等"}}}

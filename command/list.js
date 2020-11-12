@@ -12,7 +12,7 @@ module.exports = () => {
         console.log(
             '  ' + '👉' +
             '  ' + chalk.redBright(tpl) +
-            ' - ' + chalk.blueBright(templates[tpl].desc)
+            ' - ' + chalk.cyanBright(templates[tpl].desc)
         )
     }
 }

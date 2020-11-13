@@ -44,7 +44,7 @@ module.exports = () => {
 
         spinner.color = 'yellow'
         spinner.start();
-        download(gitUrl, projectUrl, (error) => {
+        download(gitUrl, projectUrl, {clone: true},(error) => {
           spinner.stop();
           if (error) {
             console.log('模版下载失败……')
